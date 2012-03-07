@@ -13,7 +13,7 @@ LIBS = -L/usr/lib -lcurl
 
 # flags
 CPPFLAGS = -DVERSION=\"${VERSION}\"
-CFLAGS = -g -ansi -pedantic -Wall ${INCS} ${CPPFLAGS}
+CFLAGS = -ansi -pedantic -Wall -O2 ${INCS} ${CPPFLAGS}
 LDFLAGS = ${LIBS}
 
 # compiler and linker
