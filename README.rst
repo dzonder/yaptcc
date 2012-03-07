@@ -7,19 +7,40 @@ Makefile template taken from suckless.org.
 Installation
 ------------
 
-$ make install
+To compile without installation::
+
+   $ make
+
+To install (``root`` privileges required)::
+
+   $ make install
 
 Usage
 -----
 
-Upload public:
+Upload public::
+
    $ yaptcc < file
 
-Upload private:
+Upload private::
+
    $ yaptcc -e password < file
 
-Download public:
+Download public::
+
    $ yaptcc id > file
 
-Download private:
+Download private::
+
    $ yaptcc -e password > file
+
+Requirements
+------------
+
+* *nix
+* cc
+* libcurl
+
+:author: Michal Olech
+:version: 0.1
+:license: MIT
