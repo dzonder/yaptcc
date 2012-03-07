@@ -18,7 +18,7 @@
 
 #include <curl/curl.h>
 
-#define URL    "https://yapt.dzonder.net"
+#define URL    "https://yapt.dzonder.net/cc"
 #define MAXLEN 255
 #define CHUNK  sizeof(char)*1024U
 
@@ -95,7 +95,7 @@ int main(int argc, char *argv[])
                    CURLFORM_COPYCONTENTS, bufcode,
                    CURLFORM_END);
 
-      sprintf(url, "%s/paste/getid", URL);
+      sprintf(url, "%s/paste", URL);
    } else if (argc == 2) {
       /* download */
 
