@@ -4,17 +4,22 @@ YAPTCC
 YAPT Commandline Client written in C with libcurl.
 Makefile template taken from suckless.org.
 
+Installation
+------------
+
+$ make install
+
 Usage
 -----
 
 Upload public:
-   ./yaptcc < file
+   $ yaptcc < file
 
 Upload private:
-   ./yaptcc -e password < file
+   $ yaptcc -e password < file
 
 Download public:
-   ./yaptcc id > file
+   $ yaptcc id > file
 
 Download private:
-   ./yaptcc -e password > file
+   $ yaptcc -e password > file
