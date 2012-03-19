@@ -86,13 +86,13 @@ int main(int argc, char *argv[])
       curl_formadd(&formpost,
                    &lastptr,
                    CURLFORM_COPYNAME, "passwd",
-                   CURLFORM_COPYCONTENTS, passwd,
+                   CURLFORM_PTRCONTENTS, passwd,
                    CURLFORM_END);
 
       curl_formadd(&formpost,
                    &lastptr,
                    CURLFORM_COPYNAME, "code",
-                   CURLFORM_COPYCONTENTS, bufcode,
+                   CURLFORM_PTRCONTENTS, bufcode,
                    CURLFORM_END);
 
       sprintf(url, "%s/paste", URL);
@@ -112,7 +112,7 @@ int main(int argc, char *argv[])
       curl_formadd(&formpost,
                    &lastptr,
                    CURLFORM_COPYNAME, "passwd",
-                   CURLFORM_COPYCONTENTS, argv[2],
+                   CURLFORM_PTRCONTENTS, argv[2],
                    CURLFORM_END);
 
       sprintf(url, "%s/raw/%x", URL, pasteid);
